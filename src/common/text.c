@@ -51,6 +51,9 @@
 #include <canberra.h>
 #endif
 
+const gchar* unicode_fallback_string = "\357\277\275"; /* The Unicode replacement character 0xFFFD */
+const gchar* arbitrary_encoding_fallback_string = "?";
+
 struct pevt_stage1
 {
 	int len;

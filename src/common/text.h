@@ -63,8 +63,8 @@ int get_stamp_str (char *fmt, time_t tim, char **ret);
 void format_event (session *sess, int index, char **args, char *o, gsize sizeofo, unsigned int stripcolor_args);
 char *text_find_format_string (char *name);
 
-static const gchar* unicode_fallback_string = "\357\277\275"; /* The Unicode replacement character 0xFFFD */
-static const gchar* arbitrary_encoding_fallback_string = "?";
+extern const gchar* unicode_fallback_string;
+extern const gchar* arbitrary_encoding_fallback_string;
 
 void sound_play (const char *file, gboolean quiet);
 void sound_play_event (int i);
